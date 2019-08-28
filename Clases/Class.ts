@@ -1,4 +1,4 @@
-class Shape2 {
+class Shape3 {
     area: number;
     private color: string;
     constructor(name: string, width: number, height: number) {
@@ -11,7 +11,7 @@ class Shape2 {
     }
 }
 
-class Shape3D extends Shape2 {
+class Shape4D extends Shape3 {
     volume: number;
     constructor(public name: string, width: number, height: number, length: number) {
         super(name, width, height);
@@ -24,6 +24,6 @@ class Shape3D extends Shape2 {
         return super.shoutout();
     }
 }
-var cube = new Shape3D("cube", 30, 30, 30);
+var cube = new Shape4D("cube", 30, 30, 30);
 console.log(cube.shoutout());
 console.log(cube.superShout());
